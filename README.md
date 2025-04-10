@@ -2,6 +2,12 @@
 
 Este proyecto es una aplicación desarrollada con Angular para simular proyectos de inversión. Permite ingresar datos clave, ejecutar una simulación y analizar si un proyecto es rentable mediante resultados como VPN y TIR.
 
+## 🚀 Demo
+
+Puedes probar la aplicación en el siguiente enlace:
+
+👉 [Ver Demo](https://tsimulacionsistemas-hosting.web.app/home/admin/simulaciones)  
+
 ## 📦 Contenido
 
 - Formulario para ingresar datos de inversión
