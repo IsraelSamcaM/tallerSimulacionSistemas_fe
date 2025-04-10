@@ -1,0 +1,421 @@
+<p>
+  <mat-toolbar>
+    <span>SIMULACIONES</span>
+  </mat-toolbar>
+</p>
+<div style="margin: auto; width: 88%;">
+  <form [formGroup]="FormSimulacion">
+    <div class="row">
+      <div class="col-sm-8">
+        <!-- Activo Fijo de Inicial -->
+        <div class="card w-100">
+          <div class="card-body">
+            <mat-tab-group>
+              <mat-tab label="Activo Fijo Inicial"> 
+                <div class="row"  >
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion pesimista</mat-label>
+                      <input formControlName="AFpesismista" matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion probable</mat-label>
+                      <input formControlName='AFprobable' matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion optimista</mat-label>
+                      <input formControlName='AFoptimista' matInput value="">
+                    </mat-form-field>
+                  </div>
+                </div>  
+              </mat-tab>
+              <mat-tab label="Activo Circulante Inicial">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion pesimista</mat-label>
+                      <input formControlName="ACpesismista" matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion probable</mat-label>
+                      <input formControlName='ACprobable' matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion optimista</mat-label>
+                      <input formControlName='ACoptimista' matInput value="">
+                    </mat-form-field>
+                  </div>
+
+                </div>
+              </mat-tab>
+              <mat-tab label="Flujo antes de impuestos">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion pesimista</mat-label>
+                      <input formControlName="FAIpesismista" matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion probable</mat-label>
+                      <input formControlName='FAIprobable' matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion optimista</mat-label>
+                      <input formControlName='FAIoptimista' matInput value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+              </mat-tab>
+            </mat-tab-group>       
+          </div>
+        </div>
+        <!-- Tasa de Inflacion -->
+        <div class="card w-100">
+          <div class="card-body">
+            <h4 class="card-title">Tasa de inflacion anual</h4>
+            <mat-tab-group>
+              <mat-tab label="Año 1"> 
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion pesimista</mat-label>
+                      <input formControlName="TAIpesismista1" matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion probable</mat-label>
+                      <input formControlName='TAIprobable1' matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion optimista</mat-label>
+                      <input formControlName='TAIoptimista1' matInput value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+
+              </mat-tab>
+              <mat-tab label="Año 2">
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion pesimista</mat-label>
+                      <input formControlName="TAIpesismista2" matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion probable</mat-label>
+                      <input formControlName='TAIprobable2' matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion optimista</mat-label>
+                      <input formControlName='TAIoptimista2' matInput value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+
+              </mat-tab>
+              <mat-tab label="Año 3"> 
+              
+                <div class="row">
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion pesimista</mat-label>
+                      <input formControlName="TAIpesismista3" matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion probable</mat-label>
+                      <input formControlName='TAIprobable3' matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion optimista</mat-label>
+                      <input formControlName='TAIoptimista3' matInput value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+              
+              </mat-tab>
+              <mat-tab label="Año 4"> 
+
+                <div class="row">
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion pesimista</mat-label>
+                      <input formControlName="TAIpesismista4" matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion probable</mat-label>
+                      <input formControlName='TAIprobable4' matInput value="">
+                    </mat-form-field>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Estimacion optimista</mat-label>
+                      <input formControlName='TAIoptimista4' matInput value="">
+                    </mat-form-field>
+                  </div>
+                </div>
+
+              </mat-tab>
+              <mat-tab label="Año 5"> 
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <mat-form-field appearance="fill" class="example-full-width">
+                        <mat-label>Estimacion pesimista</mat-label>
+                        <input formControlName="TAIpesismista5" matInput value="">
+                      </mat-form-field>
+                    </div>
+        
+                    <div class="col-sm-4">
+                      <mat-form-field appearance="fill" class="example-full-width">
+                        <mat-label>Estimacion probable</mat-label>
+                        <input formControlName='TAIprobable5' matInput value="">
+                      </mat-form-field>
+                    </div>
+        
+                    <div class="col-sm-4">
+                      <mat-form-field appearance="fill" class="example-full-width">
+                        <mat-label>Estimacion optimista</mat-label>
+                        <input formControlName='TAIoptimista5' matInput value="">
+                      </mat-form-field>
+                    </div>
+                  </div>
+
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+        <div class="card w-100">
+          <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Cantidad de Iteraciones</mat-label>
+                      <input formControlName="cantidadIteraciones" matInput value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-sm-2">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Tasa de Impuestos</mat-label>
+                      <input formControlName="tasaImpuestos" matInput value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-sm-2">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>TREMA</mat-label>
+                      <input formControlName="TREMA" matInput value="">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-sm-2">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                      <mat-label>Alfa</mat-label>
+                      <input formControlName="alfa" matInput value="">
+                    </mat-form-field>
+                  </div>
+                    <div class="col-sm-4">
+                      <button mat-raised-button color="primary" mat-button [disabled]="FormSimulacion.invalid"
+                          (click)="calcularValoresSimulados()"
+                          matTooltip="Recuerda que es el primer paso para simular"
+                          aria-label="Button that displays a tooltip when focused or hovered over"
+                          >Calcular TIR's</button>
+                    </div>
+                </div>  
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <!-- Activo Fijo de Inicial -->
+        <div class="card w-150">
+          <div class="card-body">
+            <h4 class="card-title">TIR Extremos simulados</h4>
+            
+            <div class="row">
+              <div class="col-sm-12">
+                <mat-form-field appearance="fill" class="example-full-width">
+                  <mat-label>TIR Minima</mat-label>
+                  <input matInput readonly>{{ FormSimulacion.get('TIRminima')?.value | number:'1.5-5' }}
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <mat-form-field appearance="fill" class="example-full-width">
+                  <mat-label>TIR Maxima</mat-label>
+                  <input matInput readonly>{{ FormSimulacion.get('TIRmaxima')?.value | number:'1.5-5' }}
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                
+                  <button mat-raised-button color="warn" mat-button [disabled]="FormSimulacion.invalid"
+                  (click)="simular()"
+                  matTooltip="Al hacer click simularas tu proyecto de inversión"
+                  aria-label="Button that displays a tooltip when focused or hovered over"
+                  >SIMULAR</button>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <mat-divider></mat-divider>
+  <section>
+    <p>
+      <mat-toolbar>
+        <span>TABLA DE TIRs SIMULADOS</span>
+      </mat-toolbar>
+    </p>
+  </section>
+  <div class="row">
+    <mat-tab-group>
+      <mat-tab label="Tablas de TIR simulado por intervalos">
+        <section class="example-container mat-elevation-z8" tabindex="0">
+          <table mat-table [dataSource]="dataSource">
+        
+            <ng-container matColumnDef="numIntervalo">
+              <th mat-header-cell *matHeaderCellDef> No. Intervalo </th>
+              <td mat-cell *matCellDef="let element"> {{element.numIntervalo}} </td>
+            </ng-container>
+    
+            <ng-container matColumnDef="intervaloInferior">
+              <th mat-header-cell *matHeaderCellDef> Lim. Inferior </th>
+              <td mat-cell *matCellDef="let element"> {{element.intervaloInferior| number:'1.5-5'}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="intervaloSuperior">
+              <th mat-header-cell *matHeaderCellDef> Lim Superior </th>
+              <td mat-cell *matCellDef="let element"> {{element.intervaloSuperior| number:'1.5-5'}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="frecuencia">
+              <th mat-header-cell *matHeaderCellDef> Frecuencia </th>
+              <td mat-cell *matCellDef="let element"> {{element.frecuencia}} </td>
+            </ng-container>
+    
+            <ng-container matColumnDef="porcentaje">
+              <th mat-header-cell *matHeaderCellDef> Porcentaje </th>
+              <td mat-cell *matCellDef="let element"> {{(element.porcentaje| number:'1.2-2') }} %</td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </section>
+      </mat-tab>
+      <mat-tab label="Tabla de TIR acumulada simulados">
+        <section class="example-container mat-elevation-z8" tabindex="0">
+          <table mat-table [dataSource]="dataSourceAcum">
+        
+            <ng-container matColumnDef="numIntervalo">
+              <th mat-header-cell *matHeaderCellDef> No. Intervalo </th>
+              <td mat-cell *matCellDef="let element"> {{element.numIntervalo}} </td>
+            </ng-container>
+    
+            <ng-container matColumnDef="intervaloInferior">
+              <th mat-header-cell *matHeaderCellDef> Lim. Inferior </th>
+              <td mat-cell *matCellDef="let element"> {{element.intervaloInferior| number:'1.5-5'}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="intervaloSuperior">
+              <th mat-header-cell *matHeaderCellDef> Lim Superior </th>
+              <td mat-cell *matCellDef="let element"> {{element.intervaloSuperior| number:'1.5-5'}} </td>
+            </ng-container>
+        
+            <ng-container matColumnDef="frecuencia acumulada">
+              <th mat-header-cell *matHeaderCellDef> Frecuencia acumulada</th>
+              <td mat-cell *matCellDef="let element"> {{element.frecuencia}} </td>
+            </ng-container>
+    
+            <ng-container matColumnDef="porcentaje">
+              <th mat-header-cell *matHeaderCellDef> Porcentaje </th>
+              <td mat-cell *matCellDef="let element"> {{(element.porcentaje| number:'1.2-2') }} %</td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsAcum; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsAcum;"></tr>
+          </table>
+        </section>
+      </mat-tab>
+      
+    </mat-tab-group>
+    
+  </div>
+  <mat-divider></mat-divider>
+  <section> 
+    <p>
+      <mat-toolbar>
+        <span>GRAFICA</span>
+      </mat-toolbar>
+    </p>
+  </section>
+  <canvas id= "chart2"> {{chart}}</canvas>
+  <p>
+    <mat-toolbar>
+      <mat-divider></mat-divider>
+      <span>CONCLUSIÓN</span>
+    </mat-toolbar>
+  </p>
+  <section>
+    <div *ngIf ="simulado">
+      <div *ngIf="aprobado; else mostrarError" class="alert alert-success" role="alert">
+        EL PROYECTO A SIDO ACEPTADO SEGUN DATOS DE SIMULACION!
+      </div>
+      <ng-template #mostrarError>
+        <div class="alert alert-danger" role="alert">
+          EL PROYECTO A SIDO RECHAZADO SEGUN DATOS DE SIMULACION!
+        </div>
+      </ng-template> 
+    </div>
+       
+  </section>
+  <section> 
+    <p>
+      <mat-toolbar>
+      </mat-toolbar>
+    </p>
+  </section>
+</div>
